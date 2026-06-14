@@ -31,13 +31,13 @@ A modern, reusable React React Forge UI with built-in dark mode, full TypeScript
 
 ```bash
 # Install dependencies
-npm install
+bun install
 
 # Browse components in Storybook
-npm run dev
+bun run dev
 
 # Build the library
-npm run build
+bun run build
 ```
 
 ## Usage
@@ -103,19 +103,19 @@ import { ThemeProvider, ThemeToggle, useTheme } from 'component-library'
 Link the library into another project:
 
 ```bash
-npm run build
-npm link          # in this repo
-npm link component-library  # in your app
+bun run build
+bun link          # in this repo
+bun link component-library  # in your app
 ```
 
 ## Scripts
 
 | Command | Description |
 |---------|-------------|
-| `npm run dev` | Start Storybook on port 6006 |
-| `npm run build` | Build library to `dist/` |
-| `npm run build-storybook` | Build static Storybook site |
-| `npm run lint` | Run ESLint |
+| `bun run dev` | Start Storybook on port 6006 |
+| `bun run build` | Build library to `dist/` |
+| `bun run build-storybook` | Build static Storybook site |
+| `bun run lint` | Run ESLint |
 
 ## License
 
