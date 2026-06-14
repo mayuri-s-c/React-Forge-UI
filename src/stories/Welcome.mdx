@@ -1,0 +1,66 @@
+import { Meta } from '@storybook/addon-docs/blocks'
+
+<Meta title="Welcome/Getting Started" />
+
+# Component Library
+
+A modern, **framework-agnostic React component library** built for real-world apps. Copy it into any project, theme it your way, and ship faster.
+
+## ✨ Highlights
+
+- **22+ production-ready components** — buttons, forms, feedback, layout, and more
+- **Dark mode built-in** — toggle light/dark themes with one prop
+- **Fully typed** — TypeScript-first with autocomplete everywhere
+- **Controlled & uncontrolled** — flexible state management for every form control
+- **Customizable styling** — CSS variables + `className` on every component
+- **Accessible** — ARIA labels, keyboard support, focus management
+
+## 🚀 Quick start
+
+```bash
+npm install
+npm run dev        # Storybook at localhost:6006
+npm run build      # Build the library
+```
+
+## 📦 Use in your app
+
+```tsx
+import {
+  Button,
+  Input,
+  ThemeProvider,
+  ToastProvider,
+} from 'component-library'
+import 'component-library/styles'
+
+function App() {
+  return (
+    <ThemeProvider defaultMode="light">
+      <ToastProvider>
+        <Input label="Email" type="email" />
+        <Button>Get started</Button>
+      </ToastProvider>
+    </ThemeProvider>
+  )
+}
+```
+
+## 🎨 Theming
+
+Override any design token via CSS variables:
+
+```tsx
+<ThemeProvider
+  mode="dark"
+  theme={{ '--cl-color-primary': '#6366f1' }}
+>
+  {/* your app */}
+</ThemeProvider>
+```
+
+## 📚 Browse components
+
+Use the sidebar to explore each component — every one has live examples, controls, and docs.
+
+**Start with the [Playground](/?path=/story/showcase-playground--dashboard) to see everything working together.**

@@ -1,0 +1,70 @@
+@import './tokens.css';
+@import './themes.css';
+@import './components.css';
+
+.cl-lib {
+  font-family: var(--cl-font-family);
+  color: var(--cl-color-text);
+  background-color: var(--cl-color-surface);
+}
+
+/* Ensure all text elements inherit themed colors */
+.cl-lib label,
+.cl-lib p,
+.cl-lib h1,
+.cl-lib h2,
+.cl-lib h3,
+.cl-lib h4,
+.cl-lib span,
+.cl-lib legend {
+  color: inherit;
+}
+
+.cl-field__label,
+.cl-radio-group__label,
+.cl-card__title,
+.cl-modal__title,
+.cl-alert__title,
+.cl-toast__title,
+.cl-tabs__tab--active {
+  color: var(--cl-color-text);
+}
+
+.cl-field__hint,
+.cl-field__error,
+.cl-card__description,
+.cl-modal__description,
+.cl-alert__message,
+.cl-toast__message,
+.cl-accordion__content-inner {
+  color: var(--cl-color-text-muted);
+}
+
+.cl-field__error {
+  color: var(--cl-color-danger);
+}
+
+/* Native form controls in dark mode */
+.cl-lib--dark .cl-input,
+.cl-lib--dark .cl-textarea,
+.cl-lib--dark .cl-select,
+:root.cl-lib--dark .cl-input,
+:root.cl-lib--dark .cl-textarea,
+:root.cl-lib--dark .cl-select {
+  color: var(--cl-color-text);
+  background-color: var(--cl-color-surface-muted);
+  border-color: var(--cl-color-border);
+}
+
+.cl-lib--dark .cl-input::placeholder,
+.cl-lib--dark .cl-textarea::placeholder,
+:root.cl-lib--dark .cl-input::placeholder,
+:root.cl-lib--dark .cl-textarea::placeholder {
+  color: var(--cl-color-text-muted);
+}
+
+.cl-lib--dark option,
+:root.cl-lib--dark option {
+  color: var(--cl-color-text);
+  background-color: var(--cl-color-surface-muted);
+}

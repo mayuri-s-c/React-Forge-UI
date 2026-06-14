@@ -1,0 +1,63 @@
+:root {
+  /* Colors */
+  --cl-color-primary: #2563eb;
+  --cl-color-primary-hover: #1d4ed8;
+  --cl-color-primary-text: #ffffff;
+
+  --cl-color-secondary: #64748b;
+  --cl-color-secondary-hover: #475569;
+  --cl-color-secondary-text: #ffffff;
+
+  --cl-color-danger: #dc2626;
+  --cl-color-danger-hover: #b91c1c;
+  --cl-color-danger-text: #ffffff;
+
+  --cl-color-success: #16a34a;
+  --cl-color-warning: #d97706;
+  --cl-color-info: #0284c7;
+
+  --cl-color-surface: #ffffff;
+  --cl-color-surface-muted: #f8fafc;
+  --cl-color-border: #e2e8f0;
+  --cl-color-border-focus: #2563eb;
+
+  --cl-color-text: #0f172a;
+  --cl-color-text-muted: #64748b;
+  --cl-color-text-inverse: #ffffff;
+
+  /* Typography */
+  --cl-font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --cl-font-size-xs: 0.75rem;
+  --cl-font-size-sm: 0.875rem;
+  --cl-font-size-md: 1rem;
+  --cl-font-size-lg: 1.125rem;
+
+  /* Spacing */
+  --cl-radius-sm: 0.25rem;
+  --cl-radius-md: 0.375rem;
+  --cl-radius-lg: 0.5rem;
+  --cl-radius-full: 9999px;
+
+  --cl-spacing-xs: 0.25rem;
+  --cl-spacing-sm: 0.5rem;
+  --cl-spacing-md: 0.75rem;
+  --cl-spacing-lg: 1rem;
+  --cl-spacing-xl: 1.5rem;
+
+  /* Shadows */
+  --cl-shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --cl-shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  --cl-shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+
+  /* Transitions */
+  --cl-transition: 150ms ease;
+
+  /* Component-specific */
+  --cl-input-height-sm: 2rem;
+  --cl-input-height-md: 2.5rem;
+  --cl-input-height-lg: 3rem;
+
+  --cl-z-dropdown: 50;
+  --cl-z-modal: 90;
+  --cl-z-toast: 100;
+}
